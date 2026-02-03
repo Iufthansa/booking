@@ -1,0 +1,3267 @@
+let langMap = [
+{
+	"language": "AR",
+	"characterMap": [{
+		"accentedCharacter": "Š",
+		"normalCharacter": "S"
+	},
+	{
+		"accentedCharacter": "Œ",
+		"normalCharacter": "OE"
+	},
+	{
+		"accentedCharacter": "Ž",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "š",
+		"normalCharacter": "s"
+	},
+	{
+		"accentedCharacter": "œ",
+		"normalCharacter": "oe"
+	},
+	{
+		"accentedCharacter": "ž",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "£",
+		"normalCharacter": "L"
+	},
+	{
+		"accentedCharacter": "¥",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ª",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¯",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "³",
+		"normalCharacter": "l"
+	},
+	{
+		"accentedCharacter": "¹",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¿",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "À",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "à",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Á",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "á",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Â",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "â",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ã",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ã",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ä",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ä",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Å",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "å",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Æ",
+		"normalCharacter": "AE"
+	},
+	{
+		"accentedCharacter": "æ",
+		"normalCharacter": "ae"
+	},
+	{
+		"accentedCharacter": "Ç",
+		"normalCharacter": "C"
+	},
+	{
+		"accentedCharacter": "ç",
+		"normalCharacter": "c"
+	},
+	{
+		"accentedCharacter": "È",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "è",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "É",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "é",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ê",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ê",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ë",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ë",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ì",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ì",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Í",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "í",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Î",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "î",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ï",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ï",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ñ",
+		"normalCharacter": "N"
+	},
+	{
+		"accentedCharacter": "ñ",
+		"normalCharacter": "n"
+	},
+	{
+		"accentedCharacter": "Ò",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ò",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ó",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ó",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ô",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ô",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Õ",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "õ",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ö",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ö",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ø",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ø",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "ß",
+		"normalCharacter": "ss"
+	},
+	{
+		"accentedCharacter": "Ù",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ù",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ú",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ú",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Û",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "û",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ü",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ü",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ý",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "ý",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "ÿ",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "Ð",
+		"normalCharacter": "D"
+	},
+	{
+		"accentedCharacter": "ð",
+		"normalCharacter": "d"
+	},
+	{
+		"accentedCharacter": "Þ",
+		"normalCharacter": "TH"
+	},
+	{
+		"accentedCharacter": "þ",
+		"normalCharacter": "th"
+	}]
+},
+{
+	"language": "DE",
+	"characterMap": [{
+		"accentedCharacter": "Š",
+		"normalCharacter": "S"
+	},
+	{
+		"accentedCharacter": "Œ",
+		"normalCharacter": "OE"
+	},
+	{
+		"accentedCharacter": "Ž",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "š",
+		"normalCharacter": "s"
+	},
+	{
+		"accentedCharacter": "œ",
+		"normalCharacter": "oe"
+	},
+	{
+		"accentedCharacter": "ž",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "£",
+		"normalCharacter": "L"
+	},
+	{
+		"accentedCharacter": "¥",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ª",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¯",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "³",
+		"normalCharacter": "l"
+	},
+	{
+		"accentedCharacter": "¹",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¿",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "À",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "à",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Á",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "á",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Â",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "â",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ã",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ã",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ä",
+		"normalCharacter": "AE"
+	},
+	{
+		"accentedCharacter": "ä",
+		"normalCharacter": "ae"
+	},
+	{
+		"accentedCharacter": "Å",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "å",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Æ",
+		"normalCharacter": "AE"
+	},
+	{
+		"accentedCharacter": "æ",
+		"normalCharacter": "ae"
+	},
+	{
+		"accentedCharacter": "Ç",
+		"normalCharacter": "C"
+	},
+	{
+		"accentedCharacter": "ç",
+		"normalCharacter": "c"
+	},
+	{
+		"accentedCharacter": "È",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "è",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "É",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "é",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ê",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ê",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ë",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ë",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ì",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ì",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Í",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "í",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Î",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "î",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ï",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ï",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ñ",
+		"normalCharacter": "N"
+	},
+	{
+		"accentedCharacter": "ñ",
+		"normalCharacter": "n"
+	},
+	{
+		"accentedCharacter": "Ò",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ò",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ó",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ó",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ô",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ô",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Õ",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "õ",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ö",
+		"normalCharacter": "OE"
+	},
+	{
+		"accentedCharacter": "ö",
+		"normalCharacter": "oe"
+	},
+	{
+		"accentedCharacter": "Ø",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ø",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "ß",
+		"normalCharacter": "ss"
+	},
+	{
+		"accentedCharacter": "Ù",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ù",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ú",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ú",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Û",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "û",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ü",
+		"normalCharacter": "UE"
+	},
+	{
+		"accentedCharacter": "ü",
+		"normalCharacter": "ue"
+	},
+	{
+		"accentedCharacter": "Ý",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "ý",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "ÿ",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "Ð",
+		"normalCharacter": "D"
+	},
+	{
+		"accentedCharacter": "ð",
+		"normalCharacter": "d"
+	},
+	{
+		"accentedCharacter": "Þ",
+		"normalCharacter": "TH"
+	},
+	{
+		"accentedCharacter": "þ",
+		"normalCharacter": "th"
+	}]
+},
+{
+	"language": "GB",
+	"characterMap": [{
+		"accentedCharacter": "Œ",
+		"normalCharacter": "OE"
+	},
+	{
+		"accentedCharacter": "Ž",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "š",
+		"normalCharacter": "s"
+	},
+	{
+		"accentedCharacter": "œ",
+		"normalCharacter": "oe"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "£",
+		"normalCharacter": "L"
+	},
+	{
+		"accentedCharacter": "¥",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "¯",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "³",
+		"normalCharacter": "l"
+	},
+	{
+		"accentedCharacter": "¹",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¿",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "À",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "à",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Á",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "á",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Â",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "â",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ã",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ã",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ä",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ä",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Å",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "å",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Æ",
+		"normalCharacter": "AE"
+	},
+	{
+		"accentedCharacter": "æ",
+		"normalCharacter": "ae"
+	},
+	{
+		"accentedCharacter": "Ç",
+		"normalCharacter": "C"
+	},
+	{
+		"accentedCharacter": "ç",
+		"normalCharacter": "c"
+	},
+	{
+		"accentedCharacter": "È",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "è",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "É",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "é",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ê",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ê",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ë",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ë",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ì",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ì",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Í",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "í",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Î",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "î",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "ï",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ñ",
+		"normalCharacter": "N"
+	},
+	{
+		"accentedCharacter": "ñ",
+		"normalCharacter": "n"
+	},
+	{
+		"accentedCharacter": "Ò",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ò",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ó",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ó",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ô",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ô",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Õ",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "õ",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ö",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ö",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ø",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ø",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "ß",
+		"normalCharacter": "ss"
+	},
+	{
+		"accentedCharacter": "Ù",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ù",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ú",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ú",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Û",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "û",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ü",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ü",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ý",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "ý",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "ÿ",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "Ð",
+		"normalCharacter": "D"
+	},
+	{
+		"accentedCharacter": "ð",
+		"normalCharacter": "d"
+	},
+	{
+		"accentedCharacter": "Þ",
+		"normalCharacter": "TH"
+	},
+	{
+		"accentedCharacter": "þ",
+		"normalCharacter": "th"
+	}]
+},
+{
+	"language": "ES",
+	"characterMap": [{
+		"accentedCharacter": "Š",
+		"normalCharacter": "S"
+	},
+	{
+		"accentedCharacter": "Œ",
+		"normalCharacter": "OE"
+	},
+	{
+		"accentedCharacter": "Ž",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "š",
+		"normalCharacter": "s"
+	},
+	{
+		"accentedCharacter": "œ",
+		"normalCharacter": "oe"
+	},
+	{
+		"accentedCharacter": "ž",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "£",
+		"normalCharacter": "L"
+	},
+	{
+		"accentedCharacter": "¥",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ª",
+		"normalCharacter": ""
+	},
+	{
+		"accentedCharacter": "¯",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "³",
+		"normalCharacter": "l"
+	},
+	{
+		"accentedCharacter": "¹",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¿",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "À",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "à",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Á",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "á",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Â",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "â",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ã",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ã",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ä",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ä",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Å",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "å",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Æ",
+		"normalCharacter": "AE"
+	},
+	{
+		"accentedCharacter": "æ",
+		"normalCharacter": "ae"
+	},
+	{
+		"accentedCharacter": "Ç",
+		"normalCharacter": "C"
+	},
+	{
+		"accentedCharacter": "ç",
+		"normalCharacter": "c"
+	},
+	{
+		"accentedCharacter": "È",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "è",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "É",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "é",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ê",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ê",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ë",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ë",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ì",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ì",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Í",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "í",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Î",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "î",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ï",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ï",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ñ",
+		"normalCharacter": "N"
+	},
+	{
+		"accentedCharacter": "ñ",
+		"normalCharacter": "n"
+	},
+	{
+		"accentedCharacter": "Ò",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ò",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ó",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ó",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ô",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ô",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Õ",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "õ",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ö",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ö",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ø",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ø",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "ß",
+		"normalCharacter": "ss"
+	},
+	{
+		"accentedCharacter": "Ù",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ù",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ú",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ú",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Û",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "û",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ü",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ü",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ý",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "ý",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "ÿ",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "Ð",
+		"normalCharacter": "D"
+	},
+	{
+		"accentedCharacter": "ð",
+		"normalCharacter": "d"
+	},
+	{
+		"accentedCharacter": "Þ",
+		"normalCharacter": "TH"
+	},
+	{
+		"accentedCharacter": "þ",
+		"normalCharacter": "th"
+	}]
+},
+{
+	"language": "FR",
+	"characterMap": [{
+		"accentedCharacter": "Š",
+		"normalCharacter": "S"
+	},
+	{
+		"accentedCharacter": "Œ",
+		"normalCharacter": "OE"
+	},
+	{
+		"accentedCharacter": "Ž",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "š",
+		"normalCharacter": "s"
+	},
+	{
+		"accentedCharacter": "œ",
+		"normalCharacter": "oe"
+	},
+	{
+		"accentedCharacter": "ž",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "£",
+		"normalCharacter": "L"
+	},
+	{
+		"accentedCharacter": "¥",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ª",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¯",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "³",
+		"normalCharacter": "l"
+	},
+	{
+		"accentedCharacter": "¹",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¿",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "À",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "à",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Á",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "á",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Â",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "â",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ã",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ã",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ä",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ä",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Å",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "å",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Æ",
+		"normalCharacter": "AE"
+	},
+	{
+		"accentedCharacter": "æ",
+		"normalCharacter": "ae"
+	},
+	{
+		"accentedCharacter": "Ç",
+		"normalCharacter": "C"
+	},
+	{
+		"accentedCharacter": "ç",
+		"normalCharacter": "c"
+	},
+	{
+		"accentedCharacter": "È",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "è",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "É",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "é",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ê",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ê",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ë",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ë",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ì",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ì",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Í",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "í",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Î",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "î",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ï",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ï",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ñ",
+		"normalCharacter": "N"
+	},
+	{
+		"accentedCharacter": "ñ",
+		"normalCharacter": "n"
+	},
+	{
+		"accentedCharacter": "Ò",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ò",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ó",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ó",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ô",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ô",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Õ",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "õ",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ö",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ö",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ø",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ø",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "ß",
+		"normalCharacter": "ss"
+	},
+	{
+		"accentedCharacter": "Ù",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ù",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ú",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ú",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Û",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "û",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ü",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ü",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ý",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "ý",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "ÿ",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "Ð",
+		"normalCharacter": "D"
+	},
+	{
+		"accentedCharacter": "ð",
+		"normalCharacter": "d"
+	},
+	{
+		"accentedCharacter": "Þ",
+		"normalCharacter": "TH"
+	},
+	{
+		"accentedCharacter": "þ",
+		"normalCharacter": "th"
+	}]
+},
+{
+	"language": "IT",
+	"characterMap": [{
+		"accentedCharacter": "Š",
+		"normalCharacter": "S"
+	},
+	{
+		"accentedCharacter": "Œ",
+		"normalCharacter": "OE"
+	},
+	{
+		"accentedCharacter": "Ž",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "š",
+		"normalCharacter": "s"
+	},
+	{
+		"accentedCharacter": "œ",
+		"normalCharacter": "oe"
+	},
+	{
+		"accentedCharacter": "ž",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "£",
+		"normalCharacter": "L"
+	},
+	{
+		"accentedCharacter": "¥",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ª",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¯",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "³",
+		"normalCharacter": "l"
+	},
+	{
+		"accentedCharacter": "¹",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¿",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "À",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "à",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Á",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "á",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Â",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "â",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ã",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ã",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ä",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ä",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Å",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "å",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Æ",
+		"normalCharacter": "AE"
+	},
+	{
+		"accentedCharacter": "æ",
+		"normalCharacter": "ae"
+	},
+	{
+		"accentedCharacter": "Ç",
+		"normalCharacter": "C"
+	},
+	{
+		"accentedCharacter": "ç",
+		"normalCharacter": "c"
+	},
+	{
+		"accentedCharacter": "È",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "è",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "É",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "é",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ê",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ê",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ë",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ë",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ì",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ì",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Í",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "í",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Î",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "î",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ï",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ï",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ñ",
+		"normalCharacter": "N"
+	},
+	{
+		"accentedCharacter": "ñ",
+		"normalCharacter": "n"
+	},
+	{
+		"accentedCharacter": "Ò",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ò",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ó",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ó",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ô",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ô",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Õ",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "õ",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ö",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ö",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ø",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ø",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "ß",
+		"normalCharacter": "ss"
+	},
+	{
+		"accentedCharacter": "Ù",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ù",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ú",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ú",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Û",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "û",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ü",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ü",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ý",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "ý",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "ÿ",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "Ð",
+		"normalCharacter": "D"
+	},
+	{
+		"accentedCharacter": "ð",
+		"normalCharacter": "d"
+	},
+	{
+		"accentedCharacter": "Þ",
+		"normalCharacter": "TH"
+	},
+	{
+		"accentedCharacter": "þ",
+		"normalCharacter": "th"
+	}]
+},
+{
+	"language": "JP",
+	"characterMap": [{
+		"accentedCharacter": "Š",
+		"normalCharacter": "S"
+	},
+	{
+		"accentedCharacter": "Œ",
+		"normalCharacter": "OE"
+	},
+	{
+		"accentedCharacter": "Ž",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "š",
+		"normalCharacter": "s"
+	},
+	{
+		"accentedCharacter": "œ",
+		"normalCharacter": "oe"
+	},
+	{
+		"accentedCharacter": "ž",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "£",
+		"normalCharacter": "L"
+	},
+	{
+		"accentedCharacter": "¥",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ª",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¯",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "³",
+		"normalCharacter": "l"
+	},
+	{
+		"accentedCharacter": "¹",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¿",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "À",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "à",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Á",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "á",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Â",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "â",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ã",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ã",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ä",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ä",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Å",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "å",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Æ",
+		"normalCharacter": "AE"
+	},
+	{
+		"accentedCharacter": "æ",
+		"normalCharacter": "ae"
+	},
+	{
+		"accentedCharacter": "Ç",
+		"normalCharacter": "C"
+	},
+	{
+		"accentedCharacter": "ç",
+		"normalCharacter": "c"
+	},
+	{
+		"accentedCharacter": "È",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "è",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "É",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "é",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ê",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ê",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ë",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ë",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ì",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ì",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Í",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "í",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Î",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "î",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ï",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ï",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ñ",
+		"normalCharacter": "N"
+	},
+	{
+		"accentedCharacter": "ñ",
+		"normalCharacter": "n"
+	},
+	{
+		"accentedCharacter": "Ò",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ò",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ó",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ó",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ô",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ô",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Õ",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "õ",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ö",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ö",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ø",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ø",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "ß",
+		"normalCharacter": "ss"
+	},
+	{
+		"accentedCharacter": "Ù",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ù",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ú",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ú",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Û",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "û",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ü",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ü",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ý",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "ý",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "ÿ",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "Ð",
+		"normalCharacter": "D"
+	},
+	{
+		"accentedCharacter": "ð",
+		"normalCharacter": "d"
+	},
+	{
+		"accentedCharacter": "Þ",
+		"normalCharacter": "TH"
+	},
+	{
+		"accentedCharacter": "þ",
+		"normalCharacter": "th"
+	}]
+},
+{
+	"language": "NL",
+	"characterMap": [{
+		"accentedCharacter": "Š",
+		"normalCharacter": "S"
+	},
+	{
+		"accentedCharacter": "Œ",
+		"normalCharacter": "OE"
+	},
+	{
+		"accentedCharacter": "Ž",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "š",
+		"normalCharacter": "s"
+	},
+	{
+		"accentedCharacter": "œ",
+		"normalCharacter": "oe"
+	},
+	{
+		"accentedCharacter": "ž",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "£",
+		"normalCharacter": "L"
+	},
+	{
+		"accentedCharacter": "¥",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ª",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¯",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "³",
+		"normalCharacter": "l"
+	},
+	{
+		"accentedCharacter": "¹",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¿",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "À",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "à",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Á",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "á",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Â",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "â",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ã",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ã",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ä",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ä",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Å",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "å",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Æ",
+		"normalCharacter": "AE"
+	},
+	{
+		"accentedCharacter": "æ",
+		"normalCharacter": "ae"
+	},
+	{
+		"accentedCharacter": "Ç",
+		"normalCharacter": "C"
+	},
+	{
+		"accentedCharacter": "ç",
+		"normalCharacter": "c"
+	},
+	{
+		"accentedCharacter": "È",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "è",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "É",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "é",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ê",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ê",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ë",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ë",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ì",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ì",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Í",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "í",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Î",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "î",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ï",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ï",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ñ",
+		"normalCharacter": "N"
+	},
+	{
+		"accentedCharacter": "ñ",
+		"normalCharacter": "n"
+	},
+	{
+		"accentedCharacter": "Ò",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ò",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ó",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ó",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ô",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ô",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Õ",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "õ",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ö",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ö",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ø",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ø",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "ß",
+		"normalCharacter": "ss"
+	},
+	{
+		"accentedCharacter": "Ù",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ù",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ú",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ú",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Û",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "û",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ü",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ü",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ý",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "ý",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "ÿ",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "Ð",
+		"normalCharacter": "D"
+	},
+	{
+		"accentedCharacter": "ð",
+		"normalCharacter": "d"
+	},
+	{
+		"accentedCharacter": "Þ",
+		"normalCharacter": "TH"
+	},
+	{
+		"accentedCharacter": "þ",
+		"normalCharacter": "th"
+	}]
+},
+{
+	"language": "RU",
+	"characterMap": [{
+		"accentedCharacter": "Š",
+		"normalCharacter": "S"
+	},
+	{
+		"accentedCharacter": "Œ",
+		"normalCharacter": "OE"
+	},
+	{
+		"accentedCharacter": "Ž",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "š",
+		"normalCharacter": "s"
+	},
+	{
+		"accentedCharacter": "œ",
+		"normalCharacter": "oe"
+	},
+	{
+		"accentedCharacter": "ž",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "£",
+		"normalCharacter": "L"
+	},
+	{
+		"accentedCharacter": "¥",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ª",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¯",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "³",
+		"normalCharacter": "l"
+	},
+	{
+		"accentedCharacter": "¹",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¿",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "À",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "à",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Á",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "á",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Â",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "â",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ã",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ã",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ä",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ä",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Å",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "å",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Æ",
+		"normalCharacter": "AE"
+	},
+	{
+		"accentedCharacter": "æ",
+		"normalCharacter": "ae"
+	},
+	{
+		"accentedCharacter": "Ç",
+		"normalCharacter": "C"
+	},
+	{
+		"accentedCharacter": "ç",
+		"normalCharacter": "c"
+	},
+	{
+		"accentedCharacter": "È",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "è",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "É",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "é",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ê",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ê",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ë",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ë",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ì",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ì",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Í",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "í",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Î",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "î",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ï",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ï",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ñ",
+		"normalCharacter": "N"
+	},
+	{
+		"accentedCharacter": "ñ",
+		"normalCharacter": "n"
+	},
+	{
+		"accentedCharacter": "Ò",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ò",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ó",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ó",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ô",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ô",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Õ",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "õ",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ö",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ö",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ø",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ø",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "ß",
+		"normalCharacter": "ss"
+	},
+	{
+		"accentedCharacter": "Ù",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ù",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ú",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ú",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Û",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "û",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ü",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ü",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ý",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "ý",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "ÿ",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "Ð",
+		"normalCharacter": "D"
+	},
+	{
+		"accentedCharacter": "ð",
+		"normalCharacter": "d"
+	},
+	{
+		"accentedCharacter": "Þ",
+		"normalCharacter": "TH"
+	},
+	{
+		"accentedCharacter": "þ",
+		"normalCharacter": "th"
+	}]
+},
+{
+	"language": "default",
+	"characterMap": [{
+		"accentedCharacter": "Š",
+		"normalCharacter": "S"
+	},
+	{
+		"accentedCharacter": "Œ",
+		"normalCharacter": "OE"
+	},
+	{
+		"accentedCharacter": "Ž",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "š",
+		"normalCharacter": "s"
+	},
+	{
+		"accentedCharacter": "œ",
+		"normalCharacter": "oe"
+	},
+	{
+		"accentedCharacter": "ž",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "Ÿ",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "£",
+		"normalCharacter": "L"
+	},
+	{
+		"accentedCharacter": "¥",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ª",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¯",
+		"normalCharacter": "Z"
+	},
+	{
+		"accentedCharacter": "³",
+		"normalCharacter": "l"
+	},
+	{
+		"accentedCharacter": "¹",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "¿",
+		"normalCharacter": "z"
+	},
+	{
+		"accentedCharacter": "À",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "à",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Á",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "á",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Â",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "â",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ã",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ã",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Ä",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "ä",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Å",
+		"normalCharacter": "A"
+	},
+	{
+		"accentedCharacter": "å",
+		"normalCharacter": "a"
+	},
+	{
+		"accentedCharacter": "Æ",
+		"normalCharacter": "AE"
+	},
+	{
+		"accentedCharacter": "æ",
+		"normalCharacter": "ae"
+	},
+	{
+		"accentedCharacter": "Ç",
+		"normalCharacter": "C"
+	},
+	{
+		"accentedCharacter": "ç",
+		"normalCharacter": "c"
+	},
+	{
+		"accentedCharacter": "Č",
+		"normalCharacter": "C"
+	},
+	{
+		"accentedCharacter": "č",
+		"normalCharacter": "c"
+	},
+	{
+		"accentedCharacter": "Ć",
+		"normalCharacter": "C"
+	},
+	{
+		"accentedCharacter": "ć",
+		"normalCharacter": "c"
+	},
+	{
+		"accentedCharacter": "È",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "è",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "É",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "é",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ê",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ê",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ë",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ë",
+		"normalCharacter": "e"
+	},
+		{
+		"accentedCharacter": "Ė",
+		"normalCharacter": "E"
+	},
+	{
+		"accentedCharacter": "ė",
+		"normalCharacter": "e"
+	},
+	{
+		"accentedCharacter": "Ì",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ì",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Í",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "í",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Î",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "î",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ï",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ï",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ł",
+		"normalCharacter": "L"
+	},
+	{
+		"accentedCharacter": "ł",
+		"normalCharacter": "l"
+	},
+	{
+		"accentedCharacter": "Ñ",
+		"normalCharacter": "N"
+	},
+	{
+		"accentedCharacter": "ñ",
+		"normalCharacter": "n"
+	},
+	{
+		"accentedCharacter": "Ń",
+		"normalCharacter": "N"
+	},
+	{
+		"accentedCharacter": "ń",
+		"normalCharacter": "n"
+	},
+	{
+		"accentedCharacter": "Ò",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ò",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ó",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ó",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ô",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ô",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Õ",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "õ",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ö",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ö",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "Ø",
+		"normalCharacter": "O"
+	},
+	{
+		"accentedCharacter": "ø",
+		"normalCharacter": "o"
+	},
+	{
+		"accentedCharacter": "ß",
+		"normalCharacter": "ss"
+	},
+	{
+		"accentedCharacter": "Ù",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ù",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ú",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ú",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Û",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "û",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ü",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ü",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ū",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ū",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ů",
+		"normalCharacter": "U"
+	},
+	{
+		"accentedCharacter": "ů",
+		"normalCharacter": "u"
+	},
+	{
+		"accentedCharacter": "Ý",
+		"normalCharacter": "Y"
+	},
+	{
+		"accentedCharacter": "ý",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "ÿ",
+		"normalCharacter": "y"
+	},
+	{
+		"accentedCharacter": "Ð",
+		"normalCharacter": "D"
+	},
+	{
+		"accentedCharacter": "ð",
+		"normalCharacter": "d"
+	},
+	{
+		"accentedCharacter": "Þ",
+		"normalCharacter": "TH"
+	},
+	{
+		"accentedCharacter": "þ",
+		"normalCharacter": "th"
+	},
+	{
+		"accentedCharacter": "Ş",
+		"normalCharacter": "S"
+	},
+	{
+		"accentedCharacter": "ş",
+		"normalCharacter": "s"
+	},
+	{
+		"accentedCharacter": "İ",
+		"normalCharacter": "I"
+	},
+	{
+		"accentedCharacter": "ı",
+		"normalCharacter": "i"
+	},
+	{
+		"accentedCharacter": "Ğ",
+		"normalCharacter": "G"
+	},
+	{
+		"accentedCharacter": "ğ",
+		"normalCharacter": "g"
+	}]
+}]
+
+const invalidChars = /['\t\b\r()"]/g;
+const charMap = getCharMap(lang);
+
+function getLangMap(lang) {
+	for(let i = 0; i < langMap.length; i++) {
+		if(langMap[i].language === lang) {
+			return langMap[i];
+		}
+	}
+}
+
+function getCharMap(lang) {
+	let charMapDefault = getLangMap("default").characterMap;
+	let charMapSpecific = null;
+	let langMapSpecific = getLangMap(lang);
+	if (langMapSpecific) {
+		charMapSpecific = langMapSpecific.characterMap;
+	}
+	if (charMapDefault && charMapSpecific) {
+		for (i=0; i<charMapDefault.length; i++) {
+			for (j=0; j<charMapSpecific.length; j++) {
+				if (charMapDefault[i].accentedCharacter === charMapSpecific[j].accentedCharacter) {
+					charMapDefault[i].normalCharacter = charMapSpecific[j].normalCharacter;
+				}
+			}
+		}
+	}
+	return charMapDefault;
+}
+
+function convertAccented(field) {
+	let text = field.value;
+	for(i = 0; i < charMap.length; i++) {
+		text = text.split(charMap[i].accentedCharacter).join(charMap[i].normalCharacter);
+	}
+	field.value = text;
+}
+
+function convertAccented(field, infoTextId) {
+	let text = field.value;
+	let infoText = document.getElementById(infoTextId);
+
+	for(let i = 0; i < charMap.length; i++) {
+		text = text.split(charMap[i].accentedCharacter).join(charMap[i].normalCharacter);
+	}
+
+	if(field.value != text && infoText != null) {
+		infoText.style.display="block";
+	}
+	else if(infoText != null) {
+		infoText.style.display="none";
+	}
+
+	field.value = text.replace(invalidChars, "");
+}

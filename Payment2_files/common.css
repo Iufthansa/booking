@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'lufthansa-light';
+    src: url(fonts/LufthansaText-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'lufthansa-regular';
+    src: url(fonts/LufthansaText-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'lufthansa-bold';
+    src: url(fonts/LufthansaText-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'lufthansa-head-light';
+    src: url(fonts/LufthansaHead-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'lufthansa-head-thin';
+    src: url(fonts/LufthansaHead-Thin.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'lufthansa-head-bold';
+    src: url(fonts/LufthansaHead-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'LH-icons';
+    src: url(fonts/LH-icons.ttf) format('truetype');
+}
